@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quenzy – The Ultimate Prebiotic Soda</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  🎉 <a href="#">Get flat 30% off on all purchases. Click here to try now!</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About Us</a>
+    <a href="#">Blog</a>
+  </div>
+  <div class="nav-logo">
+    <img src="Quenzy.png" alt="Quenzy">
+  </div>
+  <div class="nav-icons">
+    <button class="nav-icon-btn" aria-label="Search">🔍</button>
+    <button class="nav-icon-btn" aria-label="Account">👤</button>
+    <button class="cart-btn">🛒 Cart (0)</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">✦ Fizz. Fun. Fibre.</div>
+    <h1>The <span class="accent">Ultimate</span><br>Prebiotic<br>Soda</h1>
+    <p>Bold flavours, functional fibre, and gut-friendly vibes — all in one guilt-free can. No added sugar. No preservatives. Just fizz that loves you back.</p>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="openScratch()">Shop Now →</button>
+      <button class="btn-secondary" onclick="openQuiz()">✨ Find My Fizz</button>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">&lt;15</span><span class="label">Calories</span></div>
+      <div class="hero-stat"><span class="num">5g</span><span class="label">Fibre</span></div>
+      <div class="hero-stat"><span class="num">0</span><span class="label">Added Sugar</span></div>
+      <div class="hero-stat"><span class="num">334</span><span class="label">Sold Today</span></div>
+    </div>
+  </div>
+  <div class="hero-mascot-wrap">
+    <div class="mascot-bubble">Pop me open. Your gut will thank you! 🫧</div>
+    <img src="Mascot.png" alt="Popzy" class="hero-mascot">
+    <div class="mascot-name">Popzy</div>
+  </div>
+  <div class="hero-right">
+    <div class="floating-badge">🔥 New Flavour!</div>
+    <div class="hero-cans">
+      <div class="hero-can-img" style="transform:translateY(16px)"><img src="1.png" alt="Orange & Cream"></div>
+      <div class="hero-can-img hero-can-img--center"><img src="2.png" alt="Blueberry Litchi"></div>
+      <div class="hero-can-img" style="transform:translateY(16px)"><img src="3.png" alt="Cucumber Mint"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-inner">
+    <span>✦ POP.SIP.GLOW</span><span>✦ BOLD FLAVOURS. YOUR GUT AGREES</span>
+    <span>✦ FIZZ WITH BENEFITS</span><span>✦ PREBIOTIC SODA</span><span>✦ NO ADDED SUGAR</span>
+    <span>✦ POP.SIP.GLOW</span><span>✦ BOLD FLAVOURS. YOUR GUT AGREES</span>
+    <span>✦ FIZZ WITH BENEFITS</span><span>✦ PREBIOTIC SODA</span><span>✦ NO ADDED SUGAR</span>
+    <span>✦ POP.SIP.GLOW</span><span>✦ BOLD FLAVOURS. YOUR GUT AGREES</span>
+    <span>✦ FIZZ WITH BENEFITS</span><span>✦ PREBIOTIC SODA</span><span>✦ NO ADDED SUGAR</span>
+  </div>
+</div>
+
+<!-- MEET -->
+<section class="meet-section">
+  <div class="meet-left">
+    <h2>Meet Quenzy!</h2>
+    <p>The prebiotic soda that brings together bold flavours, functional fibre and vibes into all in one guilt free can!<br><br>
+    Prebiotics feed the good bacteria in your gut — so every sip is doing something for you, not just to you. Think of it as your daily dose of gut love, dressed up as an ice-cold fizzy drink.</p>
+  </div>
+  <div class="meet-right">
+    <div class="meet-right-img">
+      <div class="can can-pink" style="transform:rotate(-8deg);width:120px;height:240px;"><div class="can-top"></div><div class="can-brand" style="font-size:20px">QUENZY</div><div class="can-label">Blueberry<br>Litchi</div></div>
+      <div class="can can-orange" style="transform:rotate(6deg);width:120px;height:240px;"><div class="can-top"></div><div class="can-brand" style="font-size:20px">QUENZY</div><div class="can-label">Orange &<br>Cream</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<div class="benefits-bar">
+  <div><span class="benefit-icon">🔥</span><span class="benefit-num">&lt;15</span><span class="benefit-label">Calories per can</span></div>
+  <div><span class="benefit-icon">🌿</span><span class="benefit-num">5g</span><span class="benefit-label">Gut-lovin' Fibre</span></div>
+  <div><span class="benefit-icon">🚫</span><span class="benefit-num">Zero</span><span class="benefit-label">Added Sugar</span></div>
+  <div><span class="benefit-icon">✨</span><span class="benefit-num">0</span><span class="benefit-label">Preservatives</span></div>
+</div>
+
+<!-- QUIZ SECTION -->
+<section class="quiz-section" id="quizSection">
+  <div class="section-tag">✦ Personalised for you</div>
+  <h2>Find Your <span>Fizz</span> ✨</h2>
+  <p>Answer 4 quick questions and we'll match you with your perfect Quenzy flavour</p>
+  <div class="quiz-preview">
+    <div class="quiz-preview-card" onclick="openQuiz()"><span class="emoji">😎</span><p>What's your vibe?</p></div>
+    <div class="quiz-preview-card" onclick="openQuiz()"><span class="emoji">🎯</span><p>Your health goal?</p></div>
+    <div class="quiz-preview-card" onclick="openQuiz()"><span class="emoji">👅</span><p>Taste mood?</p></div>
+    <div class="quiz-preview-card" onclick="openQuiz()"><span class="emoji">🎁</span><p>Get your match!</p></div>
+  </div>
+  <button class="btn-primary" style="font-size:16px;padding:18px 48px;" onclick="openQuiz()">Start the Quiz →</button>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section">
+  <h2>Meet the Fizz</h2>
+  <div class="products-grid">
+    <div class="product-card" onclick="openResult('cucumber')">
+      <div class="product-img"><img src="1.png" alt="Cucumber Mint" loading="lazy"><span class="sale-badge">Sale</span></div>
+      <div class="product-info">
+        <h3>Cucumber-Mint</h3>
+        <div class="product-price">₹475 <s>₹594</s></div>
+        <div class="product-per">₹79.17 per can · Pack of 6</div>
+      </div>
+    </div>
+    <div class="product-card" onclick="openResult('blueberry')">
+      <div class="product-img"><img src="2.png" alt="Blueberry Litchi" loading="lazy"><span class="sale-badge">Sale</span></div>
+      <div class="product-info">
+        <h3>Blueberry Litchi</h3>
+        <div class="product-price">₹475 <s>₹594</s></div>
+        <div class="product-per">₹79.17 per can · Pack of 6</div>
+      </div>
+    </div>
+    <div class="product-card" onclick="openResult('orange')">
+      <div class="product-img"><img src="3.png" alt="Orange &amp; Cream" loading="lazy"><span class="sale-badge">Sale</span></div>
+      <div class="product-info">
+        <h3>Orange &amp; Cream</h3>
+        <div class="product-price">₹475 <s>₹594</s></div>
+        <div class="product-per">₹79.17 per can · Pack of 6</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <h2>Customers are saying</h2>
+  <div class="reviews-rating">
+    <span class="stars">★★★★★</span><span>4.77</span>
+    <span style="color:var(--gray-light)">·</span><span>13 Verified Reviews</span>
+    <span class="verified">✓ Verified</span>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Honestly didn't expect to like it this much. The cucumber mint is so refreshing — replaced my usual cold drink with this at lunch and I don't even miss it."</p>
+      <div class="reviewer">Priya S. <span>Mumbai · Cucumber Mint</span></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I've been on a no-sugar diet and finding something fizzy and fun was so hard. Quenzy is literally the answer. Blueberry Litchi is my fave!"</p>
+      <div class="reviewer">Rohan K. <span>Bengaluru · Blueberry Litchi</span></div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">"The orange cream tastes like a creamsicle but without the guilt. My whole office is hooked now. Ordering the variety pack next."</p>
+      <div class="reviewer">Ananya M. <span>Delhi · Orange &amp; Cream</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Quenzy.png" class="footer-logo" alt="Quenzy">
+      <p>The prebiotic soda that brings together bold flavours, functional fibre, and gut-friendly vibes — all in one guilt-free can.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><a href="#">All Flavours</a><a href="#">Variety Pack</a><a href="#">Subscribe &amp; Save</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="#">About Us</a><a href="#">Blog</a><a href="#">Contact</a></div>
+    <div class="footer-col"><h4>Help</h4><a href="#">Shipping Policy</a><a href="#">Refund Policy</a><a href="#">Privacy Policy</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Quenzy. All rights reserved.</span><span>Made with 🧡 in India</span></div>
+</footer>
+
+<div class="sold-ticker">🔥 <strong>334 cans</strong>&nbsp;sold today!</div>
+
+
+<!-- ══ SCRATCH MODAL ══ -->
+<div class="modal-overlay" id="scratchOverlay">
+  <div class="scratch-modal">
+    <button class="modal-close" onclick="closeScratch()">✕</button>
+
+    <!-- Step 1 -->
+    <div id="scratchStep">
+      <div class="modal-tag">🎁 Exclusive Welcome Gift</div>
+      <h2>You've earned a surprise!</h2>
+      <p class="sub">Scratch the card to reveal your secret discount</p>
+      <div class="scratch-card-wrap" id="scratchWrap">
+        <div class="scratch-reveal">
+          <span class="discount">20% OFF</span>
+          <span class="disc-label">Your First Order</span>
+        </div>
+        <canvas class="scratch-canvas" id="scratchCanvas"></canvas>
+      </div>
+      <p class="scratch-hint" id="scratchHint">
+        <span class="scratch-hint-icon">👆</span> Scratch here to reveal!
+      </p>
+    </div>
+
+    <!-- Step 2: WhatsApp — no skip -->
+    <div class="whatsapp-step" id="waStep">
+      <h2 style="margin-bottom:6px">You've unlocked 20% off! 🎉</h2>
+      <p class="sub">Enter your WhatsApp number to receive your exclusive code instantly</p>
+      <label class="wa-form-label">Your WhatsApp number</label>
+      <div class="wa-input-row">
+        <div class="wa-prefix">🇮🇳 +91</div>
+        <input class="wa-input" type="tel" placeholder="10-digit mobile number" id="waNumber" maxlength="10" inputmode="numeric">
+      </div>
+      <button class="btn-whatsapp" onclick="sendToWA()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.559 4.121 1.535 5.853L.057 23.428a.75.75 0 0 0 .936.936l5.595-1.477A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.702-.504-5.254-1.383l-.376-.214-3.894 1.027 1.048-3.808-.234-.393A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Send to my WhatsApp
+      </button>
+      <span class="wa-privacy">🔒 Your number is safe with us. No spam, ever.</span>
+    </div>
+
+    <!-- Step 3: Success -->
+    <div class="success-step" id="successStep">
+      <span class="success-icon">🎉</span>
+      <h2>You're in the Fizz Club!</h2>
+      <p style="color:var(--gray-mid);font-size:15px;margin:12px 0 20px;line-height:1.6">Your exclusive code has been sent to your WhatsApp!</p>
+      <div class="code-box">
+        <div class="code">FIZZY20</div>
+        <p>20% off your first order — valid for 24 hrs</p>
+      </div>
+      <button class="btn-primary" style="width:100%;margin-bottom:12px" onclick="closeScratch()">Shop Now →</button>
+      <button class="btn-secondary" style="width:100%" onclick="closeScratch();scrollToQuiz()">✨ Find My Perfect Flavour</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ QUIZ MODAL ══ -->
+<div class="modal-overlay" id="quizOverlay">
+  <div class="quiz-modal">
+    <button class="modal-close" onclick="closeQuiz()">✕</button>
+    <div class="quiz-progress">
+      <div class="quiz-progress-bar" id="qp1"></div>
+      <div class="quiz-progress-bar" id="qp2"></div>
+      <div class="quiz-progress-bar" id="qp3"></div>
+      <div class="quiz-progress-bar" id="qp4"></div>
+    </div>
+    <div id="quizContent"></div>
+    <button class="quiz-next" id="quizNextBtn" onclick="nextQuiz()">Continue →</button>
+  </div>
+</div>
+
+<!-- ══ RESULT MODAL ══ -->
+<div class="modal-overlay" id="resultOverlay">
+  <div class="result-modal">
+    <button class="modal-close" onclick="closeResult()">✕</button>
+    <div class="result-header">
+      <span class="result-emoji" id="resultEmoji">🥒</span>
+      <h2 id="resultTitle">Your Perfect Match!</h2>
+      <p id="resultSub">Based on your answers, we found your fizz</p>
+    </div>
+    <div class="result-flavor-card" id="resultCard"></div>
+    <div class="pack-selector">
+      <button class="pack-btn active" onclick="selectPack(this,475,6)">Pack of 6<span class="pack-price">₹475</span></button>
+      <button class="pack-btn" onclick="selectPack(this,890,12)">Pack of 12<span class="pack-price">₹890</span></button>
+      <button class="pack-btn" onclick="selectPack(this,1650,24)">Pack of 24<span class="pack-price">₹1,650</span></button>
+    </div>
+    <div class="subscribe-toggle-wrap" id="subToggleWrap">
+      <div class="toggle-row" onclick="toggleSub()">
+        <div class="toggle-label">
+          <h4>Subscribe &amp; Save 15% 🔄</h4>
+          <p>Get your Quenzy delivered automatically</p>
+          <span class="toggle-badge">SAVE ₹<span id="savingsAmt">71</span></span>
+        </div>
+        <div class="toggle-switch" id="subToggle"></div>
+      </div>
+      <div class="sub-details" id="subDetails">
+        <div class="sub-freq">
+          <button class="freq-btn active" onclick="selectFreq(this)">Every 2 weeks</button>
+          <button class="freq-btn" onclick="selectFreq(this)">Monthly</button>
+          <button class="freq-btn" onclick="selectFreq(this)">Every 6 weeks</button>
+        </div>
+        <div class="sub-savings">✅ You're saving <strong id="totalSave">₹71</strong> per delivery. Cancel anytime.</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+      <div>
+        <span style="font-size:26px;font-weight:700;font-family:'Fredoka',sans-serif;color:var(--orange)" id="finalPrice">₹475</span>
+        <span style="color:var(--gray-light);font-size:14px;margin-left:8px;text-decoration:line-through" id="origPrice">₹594</span>
+      </div>
+      <span style="font-size:13px;color:var(--gray-mid)" id="perCanPrice">₹79.17 per can</span>
+    </div>
+    <button class="btn-add-cart" onclick="addToCart()">Add to Cart 🛒</button>
+    <div class="result-trust">
+      <span>🚀 Free shipping above ₹500</span>
+      <span>🔄 Easy returns</span>
+      <span>✅ 100% natural</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
